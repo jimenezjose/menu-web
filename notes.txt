@@ -1,0 +1,8 @@
+https://firebase.google.com/docs/hosting/test-preview-deploy
+
+firebase functions:config:set algolia.app_id="" algolia.api_key="" algolia.search_key=""
+
+firebase emulators:start
+
+firebase deploy --only hosting
+firebase serve --only hosting,functions
